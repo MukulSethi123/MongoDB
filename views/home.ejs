@@ -9,7 +9,7 @@
                 <%=post.title%>
             </h1>
             <p>
-                <%= post.body%>
+                <%= lodash.truncate(post.body,{'length':100,'separator': ' '})%> <span><a href="/posts/<%= post.title %> ">Read more.</a></span>
             </p>
             <% }); %>
     </div>
