@@ -5,4 +5,10 @@
     <p>
         <%= post.body %>
     </p>
+    <form action="/delete" method="post">
+        <input type="hidden" name="deleteId" value="<%= post %> ">
+        <button class="float" type="submit">
+            <i class="fas fa-trash my-float"></i>
+        </button>
+    </form>
     <%- include("partials/footer") %>

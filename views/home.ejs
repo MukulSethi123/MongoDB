@@ -9,11 +9,13 @@
                 <%=post.title%>
             </h1>
             <p>
-                <%= lodash.truncate(post.body,{'length':100,'separator': ' '})%> <span><a href="/posts/<%= post.title %> ">Read more.</a></span>
+                <%= lodash.truncate(post.body,{'length':100,'separator': ' '})%> <span><a class="custom_link_theme" href="/posts/<%= post._id %> ">Read more.</a></span>
             </p>
             <% }); %>
     </div>
+
     <a href="/compose" class="float">
-        <i class="fas fa-edit my-float "></i>
+        <i class="fas fa-edit my-float"></i>
     </a>
+
     <%- include("partials/footer"); -%>

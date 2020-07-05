@@ -3,6 +3,11 @@ html {
     position: relative;
 }
 
+html,
+body {
+    background-color: #f5f5f5;
+}
+
 .container-fluid {
     padding-top: 70px;
     padding-bottom: 70px;
@@ -76,6 +81,7 @@ html {
     right: 40px;
     background-color: #252525;
     color: #777;
+    border-style: none;
     border-radius: 50px;
     box-shadow: 2px 2px 5px rgb(94, 95, 95);
     z-index: 1;
@@ -85,12 +91,16 @@ html {
     color: #adfcec;
 }
 
-a.float:hover {
+.float:hover {
     box-shadow: none;
 }
 
-.my-float {
+a .my-float {
     margin-top: 22px;
+}
+
+.custom_link_theme {
+    color: #3fac96;
 }
 
 
